@@ -1,0 +1,14 @@
+<h1>Task List</h1>
+{{#each model as |task|}}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{task.title}}</h3>
+    </div>
+    <div class="panel-body">
+      <p>Descrição: {{task.description}}</p>
+      <p>Prioridade: {{task.priority}}</p>
+      <p>Anexos: {{task.attach}}</p>
+      <p>Usuário: {{task.attach}}</p>
+    </div>
+  </div>
+{{/each}}
